@@ -46,7 +46,6 @@ function Drop_action(drag, drop) {
     $drag.children('.draggablecontent').text("");
     //   add the modified text to drop
     $drop.children('.draggablecontent').html(dropContent + " " + dragContent);
-    $drag.attr('style', 'position:relative');
     //   hide drag so that if the user wants to undo the join, we can bring back the div by removing 'close'
     $drag.addClass('close');
     //   add the data to an array
